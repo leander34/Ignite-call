@@ -29,11 +29,13 @@ export const TimePicker = styled('div', {
   padding: '$6 $6 0',
   overflowY: 'auto',
 
-  position: 'absolute',
-  top: 0,
-  bottom: 0,
-  right: 0,
-  width: 280,
+  '@media(min-width: 900px)': {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    right: 0,
+    width: 280,
+  },
 })
 export const TimePickerHeader = styled(Text, {
   fontWeight: '$medium',
